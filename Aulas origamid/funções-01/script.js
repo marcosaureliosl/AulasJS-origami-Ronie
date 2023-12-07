@@ -65,7 +65,47 @@ function terceiraIdade(idade) {
 
 // Crie uma função para verificar se um valor é Truthy
 
+function isTruthy(valor) {
+    return !!valor; // O operador !! converte o valor para um booleano
+  }
+  
+  // Exemplos de uso:
+  console.log(isTruthy(true));    // true
+  console.log(isTruthy(42));      // true
+  console.log(isTruthy("Hello")); // true
+  console.log(isTruthy([]));       // true
+  console.log(isTruthy({}));       // true
+  
+  console.log(isTruthy(false));   // false
+  console.log(isTruthy(0));       // false
+  console.log(isTruthy(null));    // false
+  console.log(isTruthy(undefined));// false
+  console.log(isTruthy(""));      // false
+  
+
 // Crie uma função matemática que retorne o perímetro de um quadrado
+
+function calcularPerimetroQuadrado(lado) {
+    if (typeof lado !== 'number' || lado <= 0) {
+      // Verifica se o lado é um número positivo
+      console.error('O lado do quadrado deve ser um número positivo.');
+      return undefined; // Retorna undefined se o lado não for válido
+    }
+  
+    const perimetro = 4 * lado; // Fórmula do perímetro de um quadrado
+    return perimetro;
+  }
+  
+  // Exemplo de uso:
+  const ladoQuadrado = 5;
+  const perimetroQuadrado = calcularPerimetroQuadrado(ladoQuadrado);
+  
+  if (perimetroQuadrado !== undefined) {
+    console.log(`O perímetro do quadrado com lado ${ladoQuadrado} é: ${perimetroQuadrado}`);
+  } else {
+    console.log('Erro ao calcular o perímetro do quadrado.');
+  }
+  
 // lembrando: perímetro é a soma dos quatro lados do quadrado
 
 // Crie uma função que retorne o seu nome completo

@@ -1,30 +1,30 @@
 
-// var nome = 'Marcos';
-// let idade = 28;
-// const possuiFac = 'Pos graduado em Gestao de Pessoas';
+var nome = 'Marcos';
+let idade = 28;
+const possuiFac = 'Pos graduado em Gestao de Pessoas';
 
-// console.log(nome , idade , possuiFac);
+console.log(nome , idade , possuiFac);
 
-// var preco = 25;
-// var totalComprado = 5;
-// var totalPreco = totalComprado * preco;
+var preco = 25;
+var totalComprado = 5;
+var totalPreco = totalComprado * preco;
 
-// console.log(totalPreco)
+console.log(totalPreco)
 
-// var sobreNnome = 'Marcos' , cidade = 'Fortaleza-ce';
+var sobreNnome = 'Marcos' , cidade = 'Fortaleza-ce';
 
-// console.log(sobreNnome , cidade);
+console.log(sobreNnome , cidade);
 
-// var semDefinir;
+var semDefinir;
 
-// console.log(semDefinir);
+console.log(semDefinir);
 
-// var time = 'flamengo'
-// console.log(time);
+var time = 'flamengo'
+console.log(time);
 
-// var time = 'vasco'
+var time = 'vasco'
 
-// console.log(time);
+console.log(time);
 
 const nome = 'Marcos Aurelio'; 
 const idade = 39;
