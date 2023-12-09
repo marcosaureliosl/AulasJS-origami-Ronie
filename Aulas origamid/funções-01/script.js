@@ -109,6 +109,14 @@ function calcularPerimetroQuadrado(lado) {
 // lembrando: perímetro é a soma dos quatro lados do quadrado
 
 // Crie uma função que retorne o seu nome completo
+function meuNomeCompleto() { return 'Marcos';
+}
+function meuSobreNome() { return 'Aurelio'}
+
+var nome = meuNomeCompleto();
+var sobrenome = meuSobreNome()
+
+console.log(nome, sobrenome);
 // ela deve possuir os parâmetros: nome e sobrenome
 
 // Crie uma função que verifica se um número é par
