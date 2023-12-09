@@ -109,6 +109,7 @@ function calcularPerimetroQuadrado(lado) {
 // lembrando: perímetro é a soma dos quatro lados do quadrado
 
 // Crie uma função que retorne o seu nome completo
+// ela deve possuir os parâmetros: nome e sobrenome
 function meuNomeCompleto() { return 'Marcos';
 }
 function meuSobreNome() { return 'Aurelio'}
@@ -117,9 +118,24 @@ var nome = meuNomeCompleto();
 var sobrenome = meuSobreNome()
 
 console.log(nome, sobrenome);
-// ela deve possuir os parâmetros: nome e sobrenome
+
 
 // Crie uma função que verifica se um número é par
+function ehPar(numero) {
+    // Verifica se o resto da divisão por 2 é igual a 0
+    if (numero % 2 === 0) {
+      return true; // O número é par
+    } else {
+      return false; // O número é ímpar
+    }
+  }
+  
+  // Exemplos de uso da função
+  console.log(ehPar(6));  // Saída: true (porque 4 é par)
+  console.log(ehPar(7));  // Saída: false (porque 7 é ímpar)
+  
+
+
 
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
