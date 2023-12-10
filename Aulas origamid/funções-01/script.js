@@ -135,24 +135,55 @@ function ehPar(numero) {
   console.log(ehPar(7));  // Saída: false (porque 7 é ímpar)
   
 
-
-
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
+
+function tipoDeDado (dados) {
+  return typeof dados;
+}
+
+console.log(tipoDeDado(42));        // Retorna 'number'
+console.log(tipoDeDado('Olá'));     // Retorna 'string'
+console.log(tipoDeDado(true));      // Retorna 'boolean'
+console.log(tipoDeDado({}));        // Retorna 'object'
+console.log(tipoDeDado(null));      // Retorna 'object' (Nota: typeof null retorna 'object' por razões históricas)
+console.log(tipoDeDado(undefined)); // Retorna 'undefined'
+
 
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
+addEventListener ('click', function () {
+  console.log('Marcos aurelio da Silva LIma ');
+});
+
+// Substitua 'Seu Nome Completo' pelo seu nome real
+const nomeCompleto = 'Ana Julia Rocha Lima';
+
+// Função de callback que será executada quando o evento 'scroll' ocorrer
+function mostrarNomeNoConsole() {
+  console.log(nomeCompleto);
+}
+
+// Adicionando o ouvinte de evento para o evento 'scroll'
+window.addEventListener('scroll', mostrarNomeNoConsole);
+
+
 // Corrija o erro abaixo
-// function precisoVisitar(paisesVisitados) {
-//     var totalPaises = 193;
-//     return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
-//   }
-//   function jaVisitei(paisesVisitados) {
-//     return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
-//   }
-//   precisoVisitar(20);
-//   jaVisitei(20);
+
+var totalPaises = 193;
+function precisoVisitar(paisesVisitados) {
+   
+    return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+  }
+  function jaVisitei(paisesVisitados) {
+    return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+  }
+  precisoVisitar(20);
+  jaVisitei(20);
+
+  console.log(precisoVisitar(10));
+  console.log(jaVisitei(3));
   
